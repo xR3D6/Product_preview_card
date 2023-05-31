@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+  --Dark_cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --font1:'Fraunces', serif;
+  --font2: 'Montserrat', sans-serif;
+}
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font2);
+  background: var(--Cream);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.grid{
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--White);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img img{
+  max-width: 100%;
+  display: inherit;
+}
+
+.content{
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: var(--Dark_grayish_blue);
+  font-weight: 500;
+}
+
+.name{
+  font-family: var(--font1);
+  color: var(--Very_dark_blue);
+  font-size: 34px;
+  line-height: 1em;
+}
+
+.description{
+  color: var(--Dark_grayish_blue);
+  line-height: 1.4em;
+
+}
